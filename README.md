@@ -18,14 +18,14 @@ Usage
 
 Options
 --
-| Option     | Description | Default      |
-|:-----------|:------------|:------------:|
-| This       |        T    |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+| Option       | Description | Default      |
+|:-------------|:------------|:------------:|
+| :filename    |Filename     |File.basename(path) + '.zip'|
+| :type        |MIME-Type    |'application/octet-stream'|
+| :dispotision |             |'attachment'     |
+| :status      |Status code|'200 OK'|
+| :buffer_size ||1048576|
+| :encoding |Filename encode type|:utf-8|
 
 
 
