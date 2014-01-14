@@ -52,13 +52,12 @@ send_zip '/path/to/file', filename: 'foo.zip', buffer_size: 1024
 | `:filename`    |Filename                         |File.basename(path) + '.zip'|
 | `:type`        |MIME-Type                        |'application/zip'|
 | `:disposition` |                                 |'attachment'     |
-| `:status`      |Status code                      |'200 OK'|
 | `:buffer_size` |                                 |1048576|
 | `:encoding`    |Filename encode type             |:utf-8|
 
 Notice
 --
-WEBrick is __not__ compatible with HTTP Streaming. Use puma, unicorn, thin, etc.
+WEBrick is __not__ compatible with HTTP Streaming. Use [Puma](https://github.com/puma/puma), [Unicorn](https://github.com/defunkt/unicorn), thin, etc.
 I recommend puma.
 
 Rails Sample
