@@ -3,7 +3,7 @@ require 'zipping'
 
 module SendZip
   def send_zip(path, options = {})
-    filename = options[:filename] || File.basename(path, ".*") + '.zip'
+    filename = options[:filename] || File.basename(path) + '.zip'
     type = options[:type] || 'application/zip'
     disposition = options[:disposition] == 'inline' ? 'inline' : 'attachment'
     buffer_size = options[:buffer_size] || 1048576

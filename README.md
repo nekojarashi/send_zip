@@ -21,12 +21,26 @@ class DownloadController < ApplicationController
   ...
 end
 ```
-then you can use `send_zip` like `send_file`.
+
+then you can use `send_zip` with the argument of file path. 
 ```ruby
 def download
   send_zip '/path/to/file'
 end
 ```
+
+You can set array of files
+```ruby
+send_zip ['/path/to/file', '/path/to/another']
+```
+or even folder
+```ruby
+send_zip '/path/to/folder'
+```
+
+Some options are available like `send_file`.
+
+`send_zip '/path/to/file', options`
 
 Options
 --
