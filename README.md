@@ -1,9 +1,9 @@
 send_zip
 ========
 
-This gem adds the feature of downloading the files with being zipped dynamically on Rails(or any Rack framework).
+This gem adds the feature of downloading the files with being zipped dynamically in Rails(or any Rack framework).
 
-This gem uses [zipping gem](https://github.com/nekojarashi/zipping).
+This gem uses [zipping](https://github.com/nekojarashi/zipping).
 
 Getting Started
 --
@@ -17,6 +17,8 @@ In your controller, include SendZip
 ```ruby
 class DownloadController < ApplicationController
   include SendZip
+
+  ...
 end
 ```
 then you can use `send_zip` like `send_file`.
@@ -24,6 +26,7 @@ then you can use `send_zip` like `send_file`.
 def download
   send_zip '/path/to/file'
 end
+```
 
 Options
 --
@@ -38,7 +41,7 @@ Options
 
 Notice
 --
-WEBrick is not compatible with HTTP Streaming. Use puma, unicorn, thin, etc.
+WEBrick is __not__ compatible with HTTP Streaming. Use puma, unicorn, thin, etc.
 I recommend puma.
 
 
