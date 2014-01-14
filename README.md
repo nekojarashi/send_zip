@@ -21,7 +21,7 @@ Options
 | Option         | Description                     | Default      |
 |:---------------|:--------------------------------|:-------------|
 | `:filename`    |Filename                         |File.basename(path) + '.zip'|
-| `:type`        |MIME-Type                        |'application/octet-stream'|
+| `:type`        |MIME-Type                        |'application/zip'|
 | `:dispotision` |                                 |'attachment'     |
 | `:status`      |Status code                      |'200 OK'|
 | `:buffer_size` |                                 |1048576|
