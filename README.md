@@ -70,6 +70,8 @@ Rails Sample
 Rails4 with Puma.
 [Rails sample](https://github.com/nekojarashi/send_zip_rails_sample)
 
+---
 
+Copyright [Nekojarashi Inc.](http://www.nekojarashi.com)
 
 
