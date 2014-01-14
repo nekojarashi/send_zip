@@ -38,12 +38,14 @@ or even folder
 send_zip '/path/to/folder'
 ```
 
-Some options are available like `send_file`.
-
-`send_zip '/path/to/file', options`
-
 Options
 --
+
+Some options are available like `send_file`.
+```ruby
+send_zip '/path/to/file', filename: 'foo.zip', buffer_size: 1024
+```
+
 | Option         | Description                     | Default                    |
 |:---------------|:--------------------------------|:---------------------------|
 | `:filename`    |Filename                         |File.basename(path) + '.zip'|
