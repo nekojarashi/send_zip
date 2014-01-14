@@ -2,9 +2,14 @@ send_zip
 ========
 <a href="http://badge.fury.io/rb/send_zip"><img src="https://badge.fury.io/rb/send_zip@2x.png" alt="Gem Version" height="18"></a>
 
-This gem adds the feature of downloading the files with being zipped dynamically in Rails(or any Rack framework).
+This gem enables Rails(or any Rack based app) to send the files with being zipped dynamically. Features are:
 
-This gem uses [zipping](https://github.com/nekojarashi/zipping).
+* Downloading starts immediately, so you don't need to wait until files are compeltely zipped. It's nice for downloading large sized files.
+* Can zip a file, files, or folder. Zipped folder keeps the directory structure.
+* Can set the encoding of file name in the zip. Now only UTF-8 and Shift-JIS are supported.
+
+This gem is based on [zipping](https://github.com/nekojarashi/zipping).
+
 
 Getting Started
 --
@@ -30,11 +35,11 @@ def download
 end
 ```
 
-You can set array of files
+You can set an array of files
 ```ruby
 send_zip ['/path/to/file', '/path/to/another']
 ```
-or even folder
+or folder
 ```ruby
 send_zip '/path/to/folder'
 ```
@@ -53,7 +58,7 @@ send_zip '/path/to/file', filename: 'foo.zip', buffer_size: 1024
 | `:type`        |MIME-Type                        |'application/zip'|
 | `:disposition` |                                 |'attachment'     |
 | `:buffer_size` |                                 |1048576|
-| `:encoding`    |Filename encode type             |:utf-8|
+| `:encoding`    |Filename encoding type. Now :utf8 and :shift_jis|:utf8|
 
 Notice
 --
