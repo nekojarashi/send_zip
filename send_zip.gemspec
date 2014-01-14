@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = SendZip::VERSION
   spec.authors       = ["Misaki Kawamura", "Shuntaro Shitasako"]
   spec.email         = ["misaki@nekojarashi.com"]
-  spec.description   = %q{Similar interface to "send_file" of Rails. }
+  spec.description   = %q{Sends the files with being zipped dynamically. Similar interface to "send_file" of Rails. }
   spec.summary       = %q{Sends the files with being zipped dynamically.}
   spec.homepage      = "https://github.com/nekojarashi/send_zip"
   spec.license       = "GPLV2"

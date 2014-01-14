@@ -1,5 +1,6 @@
 send_zip
 ========
+<a href="http://badge.fury.io/rb/send_zip"><img src="https://badge.fury.io/rb/send_zip@2x.png" alt="Gem Version" height="18"></a>
 
 This gem adds the feature of downloading the files with being zipped dynamically in Rails(or any Rack framework).
 
@@ -59,6 +60,12 @@ Notice
 --
 WEBrick is __not__ compatible with HTTP Streaming. Use puma, unicorn, thin, etc.
 I recommend puma.
+
+Rails Sample
+--
+Rails4 with Puma.
+[Rails sample](https://github.com/nekojarashi/send_zip_rails_sample)
+
 
 
 
