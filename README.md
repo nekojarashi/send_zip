@@ -18,14 +18,14 @@ Usage
 
 Options
 --
-| Option       | Description | Default      |
-|:-------------|:------------|:------------:|
-| :filename    |Filename     |File.basename(path) + '.zip'|
-| :type        |MIME-Type    |'application/octet-stream'|
-| :dispotision |             |'attachment'     |
-| :status      |Status code|'200 OK'|
-| :buffer_size ||1048576|
-| :encoding |Filename encode type|:utf-8|
+| Option         | Description                     | Default      |
+|:---------------|:--------------------------------|:-------------|
+| `:filename`    |Filename                         |File.basename(path) + '.zip'|
+| `:type`        |MIME-Type                        |'application/octet-stream'|
+| `:dispotision` |                                 |'attachment'     |
+| `:status`      |Status code                      |'200 OK'|
+| `:buffer_size` |                                 |1048576|
+| `:encoding`    |Filename encode type             |:utf-8|
 
 
 
