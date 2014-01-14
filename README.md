@@ -9,7 +9,7 @@ Getting Started
 --
 Add the following line to your Gemfile:
 
-    gem 'zipping'
+    gem 'send_zip'
 
 Usage
 --
