@@ -22,7 +22,7 @@ Options
 |:---------------|:--------------------------------|:-------------|
 | `:filename`    |Filename                         |File.basename(path) + '.zip'|
 | `:type`        |MIME-Type                        |'application/zip'|
-| `:dispotision` |                                 |'attachment'     |
+| `:disposition` |                                 |'attachment'     |
 | `:status`      |Status code                      |'200 OK'|
 | `:buffer_size` |                                 |1048576|
 | `:encoding`    |Filename encode type             |:utf-8|
