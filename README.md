@@ -13,13 +13,22 @@ Add the following line to your Gemfile:
 
 Usage
 --
-
-
+In your controller, include SendZip
+```ruby
+class DownloadController < ApplicationController
+  include SendZip
+end
+```
+then you can use `send_zip` like `send_file`.
+```ruby
+def download
+  send_zip '/path/to/file'
+end
 
 Options
 --
-| Option         | Description                     | Default      |
-|:---------------|:--------------------------------|:-------------|
+| Option         | Description                     | Default                    |
+|:---------------|:--------------------------------|:---------------------------|
 | `:filename`    |Filename                         |File.basename(path) + '.zip'|
 | `:type`        |MIME-Type                        |'application/zip'|
 | `:disposition` |                                 |'attachment'     |
@@ -27,6 +36,10 @@ Options
 | `:buffer_size` |                                 |1048576|
 | `:encoding`    |Filename encode type             |:utf-8|
 
+Notice
+--
+WEBrick is not compatible with HTTP Streaming. Use puma, unicorn, thin, etc.
+I recommend puma.
 
 
 
