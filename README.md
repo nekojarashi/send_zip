@@ -16,5 +16,17 @@ Usage
 
 
 
+Options
+--
+| Option     | Description | Default      |
+|:-----------|:------------|:------------:|
+| This       |        T    |     This     |
+| column     |      column |    column    |
+| will       |        will |     will     |
+| be         |          be |      be      |
+| left       |       right |    center    |
+| aligned    |     aligned |   aligned    |
+
+
 
 
