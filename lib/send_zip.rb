@@ -3,7 +3,6 @@ require 'zipping'
 
 module SendZip
   def send_zip(path, options = {})
-    raise error
     filename = options[:filename] || File.basename(path) + '.zip'
     type = options[:type] || 'application/zip'
     disposition = options[:disposition] == 'inline' ? 'inline' : 'attachment'
