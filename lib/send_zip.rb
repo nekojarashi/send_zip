@@ -7,7 +7,7 @@ module SendZip
     type = options[:type] || 'application/zip'
     disposition = options[:disposition] == 'inline' ? 'inline' : 'attachment'
     buffer_size = options[:buffer_size] || 1048576
-    encoding = options[:encoding] == :shift_jis ? :shif_jis : :utf8
+    encoding = options[:encoding] == :shift_jis ? :shift_jis : :utf8
 
     headers["Content-Type"] = type
     headers["Content-Disposition"] = disposition + '; filename=' + filename
