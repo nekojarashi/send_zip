@@ -10,7 +10,7 @@ module SendZip
     encoding = options[:encoding] == :shift_jis ? :shift_jis : :utf8
 
     headers["Content-Type"] = type
-    headers["Content-Disposition"] = disposition + '; filename=' + filename
+    headers["Content-Disposition"] = %(#{disposition}; filename="#{filename.gsub '"', '\\"'}")
     headers["Transfer-Encoding"] = "chunked"
     headers["Cache-Control"] ||= "no-cache"
 
